@@ -1,0 +1,37 @@
+name: Feature Request
+description: Suggest a new feature or SDK improvement
+title: "[FEATURE] "
+labels: ["feature"]
+
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this involve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives?
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Extra notes?
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I confirm I have provided as much detail as I can.
+          required: true

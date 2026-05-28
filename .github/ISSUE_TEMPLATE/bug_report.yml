@@ -1,0 +1,74 @@
+name: Bug Report
+description: Report crashes, broken hooks, or unexpected behavior
+title: "[BUG] "
+labels: ["bug"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug :D
+
+  - type: input
+    id: mc_version
+    attributes:
+      label: Minecraft Version
+      placeholder: "26.x?"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Windows
+        - Linux
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Please explain the issue clearly!
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro_steps
+    attributes:
+      label: Steps needed to reproduce the problem. Please do not post the issue until you have clear reproduction guidelines.
+      placeholder: |
+        1. ...?
+        2. ...?
+        3. ...?
+        4. ...?
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / crash output here
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Extra information? (OPTIONAL)
+
+  - type: checkboxes
+    id: repro_checkbox
+    attributes:
+      label: Reproduction checklist
+      options:
+        - label: I have provided detailed steps to reproduce the issue.
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I confirm I have provided as much detail as I can.
+          required: true

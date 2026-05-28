@@ -1,0 +1,44 @@
+name: Reverse Engineering Note
+description: Internal findings.
+title: "[RE] "
+labels: ["research"]
+
+body:
+  - type: input
+    id: minecraft_version
+    attributes:
+      label: Minecraft Version
+      placeholder: "26.x"
+    validations:
+      required: true
+
+  - type: input
+    id: signature
+    attributes:
+      label: Signature / Address
+      placeholder: "xx xx xx xx xx xx"
+
+  - type: textarea
+    id: discovery
+    attributes:
+      label: What was discovered?
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+
+  - type: textarea
+    id: refs
+    attributes:
+      label: Tools / References used
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I confirm I have provided as much detail as I can.
+          required: true

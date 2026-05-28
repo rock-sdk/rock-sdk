@@ -1,0 +1,45 @@
+name: Crash Report
+description: Report loader or SDK crashes
+title: "[CRASH] "
+labels: ["bug", "priority: medium"]
+
+body:
+  - type: input
+    id: minecraft_version
+    attributes:
+      label: Minecraft Version?
+    validations:
+      required: true
+
+  - type: textarea
+    id: crash
+    attributes:
+      label: Crash description and reproduction steps?
+    validations:
+      required: true
+
+  - type: textarea
+    id: stacktrace
+    attributes:
+      label: Logs / Stacktrace
+      render: shell
+
+  - type: textarea
+    id: modules
+    attributes:
+      label: Please list all loaded mods and modules!
+
+  - type: checkboxes
+    id: repro_checkbox
+    attributes:
+      label: Reproduction checklist
+      options:
+        - label: I can reproduce this crash.
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I confirm I have provided as much detail as I can.
+          required: true
