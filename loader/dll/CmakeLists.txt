@@ -1,0 +1,1 @@
+add_library(rockloader SHARED main.cpp)
