@@ -23,11 +23,11 @@ namespace Logger
 
 	void Warn(const std::string& message)
 	{
-		std::cout << "[INFO] " << message << std::endl;
+		std::cout << "[WARNING] " << message << std::endl;
 	}
 
 	void Error(const std::string& message)
 	{
-		std::cout << "[INFO] " << message << std::endl;
+		std::cout << "[ERROR] " << message << std::endl;
 	}
 }
