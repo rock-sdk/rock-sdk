@@ -1,13 +1,14 @@
 #include <Windows.h>
 
+#include "logger/logger.hpp"
+
 DWORD WINAPI InitThread(LPVOID)
 {
-	MessageBoxA(
-		nullptr,
-		"Rock SDK loaded!",
-		"Rock SDK",
-		MB_OK
-	);
+	Logger::Init();
+
+	Logger::Info("Rock SDK loading...");
+
+	Logger::Info("Rock SDK loaded!");
 
 	return 0;
 }
