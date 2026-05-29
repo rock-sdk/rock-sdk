@@ -1,4 +1,4 @@
 add_library(rockloader SHARED 
 	main.cpp
 	logger/logger.cpp
-)
+) 
